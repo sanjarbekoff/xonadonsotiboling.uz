@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main__cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__container {
+    width: clamp(320px, 100%, 490px);
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 100px 0;
+    overflow: hidden;
+}
+
+/* Background */
+.background__img,
+.bright__background {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Date section */
+.data__section {
+    position: relative;
+    z-index: 10;
+    padding: 6px 16px;
+    background: rgba(227, 227, 227, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.data__info__p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: clamp(12px, 4vw, 14px);
+    color: #FFFFFF;
+}
+
+/* Hero */
+.main__info {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: clamp(10px, 5vw, 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main__h2 {
+    font-family: Big Shoulders;
+    font-weight: 800;
+    font-size: clamp(26px, 4vw, 45px);
+    line-height: 1.1;
+    color: #0087FF;
+    text-transform: uppercase;
+}
+
+.main__text {
+    font-family: Big Shoulders;
+    font-weight: 900;
+    font-size: clamp(20px, 4vw, 34px);
+    text-transform: uppercase;
+    color: #000;
+}
+
+/* Businessman photo */
+.businessman__img {
+    position: relative;
+    z-index: 5;
+}
+
+.businessman {
+    max-width: clamp(300px, 40vw, 344px);
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BTN */
+.main__btn,
+.main__btn__2 {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    background: linear-gradient(90deg, #DD0000 0%, #FF4949 52.29%, #DD0000 100%);
+    padding: clamp(18px, 4vw, 35px);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.a__link {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: clamp(16px, 4vw, 28px);
+    color: white;
+    text-decoration: none;
+}
+
+/* Free */
+.under__btn__text,
+.under__btn__text__2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.under__h3 {
+    font-family: Big Shoulders;
+    font-weight: 800;
+    font-size: clamp(32px, 10vw, 48px);
+}
+
+/* Presentation list */
+.private__presentation {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.private__h3 {
+    font-family: Big Shoulders;
+    font-size: clamp(28px, 8vw, 38px);
+    text-transform: uppercase;
+}
+
+.private__presentation__list {
+    width: 90%;
+    border: 2px solid #E0C49D;
+    border-radius: 36px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.presentation__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.presentation__card img {
+    width: clamp(250px, 100%, 397px);
+}
+
+.presentation__card__p {
+    font-family: 'Inter';
+    font-size: clamp(13px, 4vw, 18px);
+    color: black;
+    line-height: 1.4;
+}
+
+.presentation__card__p span {
+    font-weight: 900;
+    color: black;
+}
+
+/* Footer Timer */
+.timer__footer {
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(320px, 100%, 490px);
+    background: linear-gradient(90deg, #F6D5A7 0%, #FFF5CC 50%, #FFDFB3 100%);
+    padding: 15px;
+    text-align: center;
+    z-index: 100;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer__p {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: clamp(14px, 4vw, 18px);
+    background: linear-gradient(90deg, #A66100 -13.13%, #000000 47.66%, #A60800 108.44%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
