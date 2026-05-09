@@ -107,10 +107,18 @@ body {
     z-index: 10;
     width: 90%;
     background: linear-gradient(90deg, #DD0000 0%, #FF4949 52.29%, #DD0000 100%);
+    box-shadow: 0 8px 0 #b30000;
+    transition: all 0.1s ease;
     padding: clamp(18px, 4vw, 35px);
     border-radius: 20px;
     border: none;
     cursor: pointer;
+}
+
+.main__btn:active,
+.main__btn__2:active {
+    box-shadow: 0 4px 0 #b30000;
+    transform: translateY(4px);
 }
 
 .a__link {
